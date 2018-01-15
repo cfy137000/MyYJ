@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app="">
+    <p>名字 : <input type="text" ng-model="name"></p>
+    {% verbatim %}
+    <!--加上该标签来解决angular和django冲突-->
+    <h1>Hello {{name}}</h1>
+    {% endverbatim %}
+</div>
+
+</body>
+</html>

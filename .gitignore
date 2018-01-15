@@ -99,3 +99,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+MyYJ_Django/.idea/
+MyYJ_Flask/.idea/
