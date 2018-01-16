@@ -22,21 +22,26 @@
         <img src="/static/images/logo.png" style="margin-left: 2% ;vertical-align:bottom;">
         <span style="font-size: 35px;color: #578baf;">阳江业务流程管理平台</span>
     </div>
-    <img src="/static/images/login_bg.png"/>
+    <img src="/static/images/login_bg.png" style="width: 100%"/>
     <div style="text-align: center;">中广核集团技术中心 Copyright 2011-2012 技术支持: 信息中心 联系电话:45683*</div>
 </div>
-<div id="myVue" style="position: absolute;top:50%;transform: translateY(-50%);right: 50px;background-color: #F0F8FA">
+<div id="myVue"
+     style="position: absolute;top:50%;transform: translateY(-50%);right: 50px;width: 350px;padding: 20px" >
     <el-tabs type="border-card">
         <el-tab-pane>
-            <span slot="label"><i class="el-icon-goods"></i> 用户登录</span>
-            <div>
-                <form>
-                    <label style="text-align: left">用户名</label>
-                    <input>
+            <span slot="label"><i class="icon iconfont icon-el-icon-yj"></i> 用户登录</span>
+            <div >
+                <form >
+                    <label for="contact">
+                        <span>用户名</span>
+                        <input type="text" id="contact">
+                    </label>
                     <br>
-                    <label style="text-align: left">密码</label>
-                    <input>
-
+                    <label for="password">
+                        <span>密码</span>
+                        <input id="password" type="password">
+                    </label><br>
+                    <input type="submit" style="width: 90%;margin-left: 5%;margin-top: 5%;padding: 10px" class="button blue" >
                 </form>
             </div>
         </el-tab-pane>
