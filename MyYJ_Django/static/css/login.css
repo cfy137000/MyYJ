@@ -1,0 +1,10 @@
+body{
+    background-color: #F0F8FA;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+.main{
+    float: inherit;
+}

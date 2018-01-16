@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="/static/commons.css"/>
+    <link rel="stylesheet" href="/static/css/login.css"/>
+    <link rel="stylesheet" href="/static/css/element.min.css">
     <style>
-        label{
+        label {
             width: 80px;
             text-align: right;
             display: inline-block;
         }
     </style>
+    <script src="/static/vue.min.js"></script>
+    <script src="/static/element.min.js"></script>
 </head>
-<body>
-    <form action="/login" method="post">
-        <p>
-            <label for="username">用户名:</label>
-            <input id="username" type="text" name="user">
-        </p>
-        <p>
-            <label for="password">密码:</label>
-            <input id="password" type="password" name="pwd">
-            <input type="submit" value="提交">
-            <span style="color:red">{{ error_msg }}</span>
-        </p>
+<body style="height: 100%">
 
-    </form>
-<script src="/static/jquery-3.2.1.min.js"></script>
+<div style="position:absolute; top:50%;transform: translateY(-50%);width: 100%;overflow: hidden; ">
+    <div>
+        <img src="/static/images/logo.png" style="margin-left: 2% ;vertical-align:bottom;">
+        <span style="font-size: 35px;color: #578baf;">阳江业务流程管理平台</span>
+    </div>
+    <img src="/static/images/login_bg.png"/>
+    <div style="text-align: center;">中广核集团技术中心 Copyright 2011-2012 技术支持: 信息中心 联系电话:45683*</div>
+</div>
+<div id="myVue" style="position: absolute;top:50%;transform: translateY(-50%);right: 50px;background-color: #F0F8FA">
+    <el-tabs type="border-card">
+        <el-tab-pane>
+            <span slot="label"><i class="el-icon-goods"></i> 用户登录</span>
+            <div>
+                <form>
+                    <label style="text-align: left">用户名</label>
+                    <input>
+                    <br>
+                    <label style="text-align: left">密码</label>
+                    <input>
+
+                </form>
+            </div>
+        </el-tab-pane>
+    </el-tabs>
+
+
+</div>
+
+
+<script type="text/javascript">
+    new Vue({
+        el: '#myVue'
+    })
+</script>
 </body>
 </html>
